@@ -64,8 +64,6 @@ public class PlayerController : MonoBehaviour {
 				buildMenu.setInputs(Input.GetAxis("RightStickHorizontal" + player),
 									Input.GetAxis("RightStickVertical" + player));
 			}
-			if(player==1)
-				playerCamera.GetComponent<SmoothFollow>().target = playerCharacter.transform;
 		}
 		else
 		{
@@ -85,6 +83,9 @@ public class PlayerController : MonoBehaviour {
 		actorController = playerCharacter.GetComponent<ActorController>();
 		inputController = playerCharacter.GetComponent<TwinStickInputController>();
 		inputController.useExternalInput = true;
+
+		if(playerCamera)
+			playerCamera.GetComponent<SmoothFollow>().target = playerCharacter.transform;
 
 		buildMenu.followObject = playerCharacter.transform;
 	}
