@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: 2b9d05c18854ced43a62824a4d5f5449
+guid: 00c6d8f218e5b09439da93167c037852
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - menuTexture: {fileID: 2800000, guid: afa25de8ef7bf884c9a8082f6d2e276f, type: 3}
-  - followObject: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
