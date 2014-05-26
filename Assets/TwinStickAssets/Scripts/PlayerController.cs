@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public GameObject playerPrefab;
+	public Camera playerCamera;
 
 	public int player = 1;
 	private BuildMenu buildMenu;
@@ -63,6 +64,8 @@ public class PlayerController : MonoBehaviour {
 				buildMenu.setInputs(Input.GetAxis("RightStickHorizontal" + player),
 									Input.GetAxis("RightStickVertical" + player));
 			}
+			if(player==1)
+				playerCamera.GetComponent<SmoothFollow>().target = playerCharacter.transform;
 		}
 		else
 		{
@@ -75,6 +78,7 @@ public class PlayerController : MonoBehaviour {
 
 	void spawnPlayer(Vector2 position)
 	{
+
 		isAlive = true;
 		playerCharacter = (GameObject) Instantiate(playerPrefab, new Vector3(position.x, 2.0f, position.y), Quaternion.identity);
 		weaponController = playerCharacter.GetComponent<WeaponController>();
