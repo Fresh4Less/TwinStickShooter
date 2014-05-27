@@ -131,6 +131,10 @@ MonoBehaviour:
   menuTexture: {fileID: 2800000, guid: 8e3a690b2a22e4146bb3ac2af8dbf134, type: 3}
   isEnabled: 0
   followObject: {fileID: 0}
+  buildings:
+  - {fileID: 100000, guid: 655cf1218e657be4cbb0a3d070e5d22a, type: 2}
+  - {fileID: 100000, guid: 5f6b3bc655b8ab144810267f1d1432a8, type: 2}
+  - {fileID: 100000, guid: f9d628f23e9f2a341883a8d9ba92e84a, type: 2}
 --- !u!1001 &88355752
 Prefab:
   m_ObjectHideFlags: 0
@@ -2012,6 +2016,10 @@ MonoBehaviour:
   menuTexture: {fileID: 2800000, guid: 8e3a690b2a22e4146bb3ac2af8dbf134, type: 3}
   isEnabled: 0
   followObject: {fileID: 0}
+  buildings:
+  - {fileID: 100000, guid: 655cf1218e657be4cbb0a3d070e5d22a, type: 2}
+  - {fileID: 100000, guid: 5f6b3bc655b8ab144810267f1d1432a8, type: 2}
+  - {fileID: 100000, guid: f9d628f23e9f2a341883a8d9ba92e84a, type: 2}
 --- !u!1 &1333439692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2077,10 @@ MonoBehaviour:
   menuTexture: {fileID: 2800000, guid: 8e3a690b2a22e4146bb3ac2af8dbf134, type: 3}
   isEnabled: 0
   followObject: {fileID: 0}
+  buildings:
+  - {fileID: 100000, guid: 655cf1218e657be4cbb0a3d070e5d22a, type: 2}
+  - {fileID: 100000, guid: 5f6b3bc655b8ab144810267f1d1432a8, type: 2}
+  - {fileID: 100000, guid: f9d628f23e9f2a341883a8d9ba92e84a, type: 2}
 --- !u!1 &1344220863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2138,10 @@ MonoBehaviour:
   menuTexture: {fileID: 2800000, guid: 8e3a690b2a22e4146bb3ac2af8dbf134, type: 3}
   isEnabled: 0
   followObject: {fileID: 0}
+  buildings:
+  - {fileID: 100000, guid: 655cf1218e657be4cbb0a3d070e5d22a, type: 2}
+  - {fileID: 100000, guid: 5f6b3bc655b8ab144810267f1d1432a8, type: 2}
+  - {fileID: 100000, guid: f9d628f23e9f2a341883a8d9ba92e84a, type: 2}
 --- !u!1001 &1372369032
 Prefab:
   m_ObjectHideFlags: 0

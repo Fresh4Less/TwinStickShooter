@@ -3,10 +3,12 @@ using System.Collections;
 
 public class BuildMenu : RadialMenu {
 
+	public GameObject[] buildings;
+
 	// Use this for initialization
 	protected override  void Start () {
 		base.Start();
-		createMenuItems(6);
+		createMenuItems(buildings.Length);
 		disable();
 	
 	}
@@ -20,5 +22,7 @@ public class BuildMenu : RadialMenu {
 	protected override void activateMenuItem(int index)
 	{
 		//Debug.Log("Selected " + index);
+		//maybe decouple this
+		gameObject.GetComponent<PlayerController>().beginBuildingPlacement(buildings[index]);
 	}
 }
