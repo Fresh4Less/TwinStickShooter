@@ -59,11 +59,11 @@ public class RadialMenu : MonoBehaviour {
 	protected void createMenuItems(int itemCount)
 	{
 		float itemSize = 360.0f / (float)itemCount;
-		menuBackground = createMenuItem(360.0f, 0.8f, 2.2f, 0.0f, true);
+		menuBackground = createMenuItem(360.0f, 1.8f, 4.2f, 0.0f, true);
 
 		for(int i = 0; i < itemCount; i++)
 		{
-			menuItems.Add(createMenuItem(itemSize, 1.0f, 2.0f, i*itemSize + 90.0f, false));
+			menuItems.Add(createMenuItem(itemSize, 2.0f, 4.0f, i*itemSize + 90.0f, false));
 		}
 	}
 

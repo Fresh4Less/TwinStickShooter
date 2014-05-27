@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 	private ActorController actorController;
 	private GameObject playerCharacter;
 	private TwinStickInputController inputController;
+	private BuildingPlacer buildingPlacer;
 	bool isAlive = false;
 
 	// Use this for initialization
@@ -64,6 +65,16 @@ public class PlayerController : MonoBehaviour {
 				buildMenu.setInputs(Input.GetAxis("RightStickHorizontal" + player),
 									Input.GetAxis("RightStickVertical" + player));
 			}
+
+			if(buildingPlacer.isActive && Input.GetButtonDown("PlaceBuilding" + player))
+			{
+				buildingPlacer.placeBuilding();
+			}
+
+			if(buildingPlacer.isActive && Input.GetButtonDown("Cancel" + player))
+			{
+				buildingPlacer.cancelBuilding();
+			}
 		}
 		else
 		{
@@ -83,10 +94,16 @@ public class PlayerController : MonoBehaviour {
 		actorController = playerCharacter.GetComponent<ActorController>();
 		inputController = playerCharacter.GetComponent<TwinStickInputController>();
 		inputController.useExternalInput = true;
+		buildingPlacer = playerCharacter.GetComponent<BuildingPlacer>();
 
 		if(playerCamera)
 			playerCamera.GetComponent<TwinStickCameraFollow>().target = playerCharacter;
 
 		buildMenu.followObject = playerCharacter.transform;
+	}
+
+	public void beginBuildingPlacement(GameObject building)
+	{
+		buildingPlacer.beginBuildingPlacement(building);
 	}
 }
