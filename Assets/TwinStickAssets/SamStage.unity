@@ -195,7 +195,7 @@ GameObject:
   - 143: {fileID: 147854458}
   - 114: {fileID: 147854457}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Camera Player 1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,14 +209,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 147854456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885b1972ad11a921d000d37b8d76c639, type: 3}
+  m_Script: {fileID: 11500000, guid: 26f9ee67401bb834f8670a5443278c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 10
-  height: 5
-  heightDamping: 2
-  rotationDamping: 3
+  damping: 5
 --- !u!143 &147854458
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1365,14 +1362,27 @@ GameObject:
   - 92: {fileID: 616173386}
   - 124: {fileID: 616173385}
   - 143: {fileID: 616173390}
-  - 114: {fileID: 616173389}
+  - 114: {fileID: 616173384}
   m_Layer: 0
-  m_Name: Camera Player2
+  m_Name: Camera Player 2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &616173384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616173383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f9ee67401bb834f8670a5443278c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  damping: 5
 --- !u!124 &616173385
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1427,22 +1437,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &616173389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 616173383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885b1972ad11a921d000d37b8d76c639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  distance: 10
-  height: 5
-  heightDamping: 2
-  rotationDamping: 3
 --- !u!143 &616173390
 CharacterController:
   m_ObjectHideFlags: 0

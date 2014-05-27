@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour {
 		inputController.useExternalInput = true;
 
 		if(playerCamera)
-			playerCamera.GetComponent<SmoothFollow>().target = playerCharacter.transform;
+			playerCamera.GetComponent<TwinStickCameraFollow>().target = playerCharacter;
 
 		buildMenu.followObject = playerCharacter.transform;
 	}
