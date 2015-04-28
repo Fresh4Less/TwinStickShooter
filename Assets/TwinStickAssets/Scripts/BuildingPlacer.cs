@@ -32,6 +32,10 @@ public class BuildingPlacer : MonoBehaviour {
 
 	public void beginBuildingPlacement(GameObject building)
 	{
+		if(currentBuilding != null)
+		{
+			cancelBuilding();
+		}
 		currentBuilding = (GameObject) Instantiate(building, new Vector3(0,0,0), Quaternion.identity);
 		currentBuilding.GetComponent<Collider>().enabled = false;
 		//building.transform.position = new Vector3(transform.position.x + 1.5f, transform.position.y + 0.0f, transform.position.z + 0.0f);
